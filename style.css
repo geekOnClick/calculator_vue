@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: #2c3e50;
+    background: #2c3e50;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  img {
+      position: relative;
+      margin-top: 70px;
+  }
+
+  .calcInput {
+    position: absolute;
+    top: 117px;
+    left: 468px;
+    z-index: 1;
+    width: 600px;
+    height: 113px;
+    border-radius: 26px;
+    font-size: 65px;
+    text-align: right;
+    padding-right: 18px;
+    background-color: #bfc0c2;
+  }
+
+  .buttons{
+    top: 299px;
+    width: 587px;
+    left: 470px;
+    height: 396px;
+    outline: 1px solid red;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0;
+  }
+
+  .buttonCalc {
+    width: 129px;
+    height: 98px;
+    outline: 1px solid black;
+  }
+
+  .resetBtn {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 900px;
+    top: 155px;
+    z-index: 2;
+    }
+
+  .operationsInput {
+    z-index: 2;
+    position: absolute;
+    top: 109px;
+    left: 1000px;
+    text-align: right;
+    font-size: 17px;
+  }
