@@ -9,13 +9,16 @@
 </head>
 <body>
     <div class="container" id="app">
+        <div class="calc">
+        <img src="img/calculator.jpg">
         <p class="operationsInput" v-if="operationInput.length !== 0">{{ operationInput }}</p>
+        </div>
+        
         <input type="text" class="calcInput" v-model ="inputValue">
         <div class="buttons">
           <button class="buttonCalc" v-for="btn of btns" @click="add">{{ btn }}</button>
         </div>
-    <img src="img/calculator.jpg">
-    <img src="img/reset.png" class="resetBtn" @click="reset">
+        <img src="img/reset.png" class="resetBtn" @click="reset">
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
